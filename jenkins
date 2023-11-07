@@ -1,0 +1,31 @@
+pipeline
+{
+agent any
+stages
+{
+ stage("commit")
+{
+steps{
+echo "Commited the project"
+}
+}
+ stage("build")
+{
+steps{
+echo "build the project"
+}
+}
+ stage("test")
+{
+steps{
+echo "test the project"
+}
+}
+ stage("release")
+{
+steps{
+echo "release the project"
+}
+}
+}
+}
